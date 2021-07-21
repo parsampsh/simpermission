@@ -1,0 +1,40 @@
+{
+    "name": "parsampsh/simpermission",
+    "description": "A Package to handle permissions for users in the laravel applications",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "parsa shahmaleki",
+            "email": "parsampsh@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "laravel/framework": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Simpermission\\": "src/Simpermission"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Simpermission\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Simpermission\\SimpermissionServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    }
+}
