@@ -43,6 +43,16 @@ trait HasPermissions
     }
 
     /**
+     * The Default manager determiner
+     * Please override this
+     *
+     * @return bool
+     */
+    public function userIsManager() {
+        return false;
+    }
+
+    /**
      * Checks that has user a specific permission
      *
      * @param string $permission
