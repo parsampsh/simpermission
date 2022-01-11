@@ -3,7 +3,7 @@
 $header = <<<EOF
 This file is part of Simpermission.
 
-Copyright 2021 parsa shahmaleki <parsampsh@gmail.com>
+Copyright 2021-2022 Parsa Shahmaleki <parsampsh@gmail.com>
 
 Simpermission project is Licensed Under MIT.
 For more information, please see the LICENSE file.
@@ -16,7 +16,7 @@ $finder = PhpCsFixer\Finder::create()
     ->in(__DIR__.'/migrations')
     ->name('*.php');
 
-return PhpCsFixer\Config::create()
+return (new PhpCsFixer\Config)
     ->setUsingCache(true)
     ->setRiskyAllowed(true)
     ->setRules(array(

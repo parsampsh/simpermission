@@ -46,14 +46,14 @@ class User
 }
 ```
 
-You saw some methods like `addPermission` below that was added to your user model.
+You saw some methods like `addPermission` above that was added to your user model.
 The `HasPermissions` trait adds them to your model.
 
 Also, there is another concept named **Manager user** or **Super user**.
-The manager user should access everything.
+The manager user should access anything.
 When you use `hasPermission` method for checking a permission for a user,
 The same permission should be added via `addPermission` method.
-But for manager user, everything is allowed.
+But for manager user, anything is allowed.
 
 To determine that which user is manager(full permission access) and which one is not,
 you should implement a method named `userIsManager` in your user model:
